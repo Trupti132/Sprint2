@@ -16,7 +16,7 @@ namespace HMS.Entity.Models
         [ForeignKey("patientRegs")]
         public int PatientId { get; set; }
 
-        public virtual Doctor doctor { get; set; }
+        public virtual Doctor doctor { get; set;     }
         [ForeignKey("doctor")]
         public int DoctorId { get; set; }
         public virtual Doctor Doctors { get; set; }
@@ -25,5 +25,6 @@ namespace HMS.Entity.Models
         public string MedicineIssue { get; set; }
         public string MedicineTime { get; set; }
         public bool pharmacyStock { get; set; }
+        //added//
     }
 }
